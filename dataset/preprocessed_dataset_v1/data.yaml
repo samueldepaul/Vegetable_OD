@@ -1,0 +1,13 @@
+names:
+  0: null
+  1: lettuce
+  2: potato
+  3: carrot
+  4: onion
+  5: garlic
+  6: leek
+  7: broccoli
+path: C:\Users\Samuel\Documents\Vegetable_OD\dataset\preprocessed_dataset_v1\annotations_yolo\..
+test: images/test
+train: images/train
+val: images/val
