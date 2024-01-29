@@ -63,7 +63,8 @@ Vegetable_OD
 Once the `preprocessing.py` script is executed, we have the raw dataset in a YOLO-compatible format, ready to be used for model training. To demonstrate the application of the preprocessed dataset in training, validation, and prediction of an Object Detection model, the following example is provided:
 
 First of all, to execute any YOLO-related code the `ultralytics` library must be installed:    
- `pip install ultralytics`
+ ```bash
+ pip install ultralytics```
 
 To **train** the model using pretrained weights run:    
  `yolo detect train data=dataset\preprocessed_dataset_v1\data.yaml model=models\yolov8n.pt epochs=20 imgsz=512 project=runs\detect name=yolo_train_example`
