@@ -68,12 +68,16 @@ First of all, to execute any YOLO-related code the `ultralytics` library must be
 ```
 
 To **train** the model using pretrained weights run:    
- `yolo detect train data=dataset\preprocessed_dataset_v1\data.yaml model=models\yolov8n.pt epochs=20 imgsz=512 project=runs\detect name=yolo_train_example`
+```bash
+yolo detect train data=dataset\preprocessed_dataset_v1\data.yaml model=models\yolov8n.pt epochs=20 imgsz=512 project=runs\detect name=yolo_train_example`
+```
 
 This is a straightforward example utilizing the YOLOv8 Nano pretrained model, training for only 20 epochs without adjusting any of the more complex parameters.
 
 To check the model's performance on the validation set run:    
- `yolo detect val data=dataset\preprocessed_dataset_v1\data.yaml model=runs\detect\yolo_train_example\weights\best.pt project=runs\detect name=yolo_val_example`
+```bash
+yolo detect val data=dataset\preprocessed_dataset_v1\data.yaml model=runs\detect\yolo_train_example\weights\best.pt project=runs\detect name=yolo_val_example`
+```
 
 The validation metrics obtained from the previous instruction are the following:
 ```bash
@@ -90,7 +94,9 @@ The validation metrics obtained from the previous instruction are the following:
 These metrics indicate a fairly promising performance despite the modest training process that was conducted. 
 
 Finally, the adjusted model can be used on unseen images to detect and classify the specified vegetables. Therefore, to apply the model on the **test** set, run:   
-`yolo detect predict source=dataset\preprocessed_dataset_v1\images\test model=runs\detect\yolo_train_example\weights\best.pt project=runs\detect name=yolo_pred_example`
+```bash
+yolo detect predict source=dataset\preprocessed_dataset_v1\images\test model=runs\detect\yolo_train_example\weights\best.pt project=runs\detect name=yolo_pred_example`
+```
 
 Let's now illustrate some of the model's detections on unseen images:
 
