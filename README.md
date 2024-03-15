@@ -1,4 +1,4 @@
-# Trifork ML Developer Technical Assignment
+# ML Developer Technical Assignment
 
 ## Converting, Resizing, and Splitting Vegetable Image Dataset for Object Detection Training.
 
